@@ -18,3 +18,9 @@
 4.  **[More Useful Git Features](04-git-guide-more-features.md)**: Explore additional Git features such as stashing changes, viewing specific commits, removing files from tracking, tagging commits, and managing credentials.
 
 This collection of guides aims to provide a solid foundation in Git for anyone starting with version control.
+
+---
+
+## Contributions
+
+If you find any errors, or have suggestions for improvements, feel free to open a pull request! Your contributions are welcome.
