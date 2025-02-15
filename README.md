@@ -1,8 +1,16 @@
 # Git Guides for Beginners
 
-This repository contains a series of guides designed to help beginners learn Git and version control.  Each guide focuses on a specific aspect of Git, providing clear explanations and practical examples.
+## Index
 
-## Guides Included
+*   [Guides Included](#guides-included)
+    *   [Getting Started with Git](01-git-guide-getting-started.md)
+    *   [Working with Remote Repositories](02-git-guide-remote-repositories.md)
+    *   [Collaborating with Branches](03-git-guide-branches.md)
+    *   [More Useful Git Features](04-git-guide-more-features.md)
+
+---
+
+## Guides Included <a name="guides-included"></a>
 
 1.  **[Getting Started with Git](01-git-guide-getting-started.md)**:  Learn how to install Git, configure your identity, initialize repositories, check status, stage and commit changes, and view commit history.
 2.  **[Working with Remote Repositories](02-git-guide-remote-repositories.md)**: Understand how to connect to remote repositories like GitHub, add remotes, push and pull changes, and clone repositories.
