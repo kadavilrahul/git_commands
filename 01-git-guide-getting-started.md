@@ -42,7 +42,7 @@ git config --global --list
 
 ### Default Branch Name
 
-By default, Git may initialize new repositories with a branch named `main`. In older versions or configurations, the default branch might be `master`.
+By default, Git may initialize new repositories with a branch named `master`.
 
 To check your default initial branch name, use:
 
