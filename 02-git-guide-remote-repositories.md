@@ -4,13 +4,15 @@ This section explains how to connect to and work with remote repositories like G
 
 ### Add Remote Repository
 
-Connect local repository to a remote repository on GitHub. Get repository URL from GitHub (e.g., `https://github.com/username/repository_name.git`).
+Connect local repository to a remote repository on GitHub. 
+Get repository URL from GitHub (e.g., `https://github.com/username/repository_name.git`).
 
 ```bash
 git remote add origin https://github.com/username/repository_name.git
 ```
 
-*   **`git remote add origin https://github.com/username/repository_name.git`**: Add a remote repository named `origin`. Replace URL with your GitHub repository URL.
+*   **`git remote add origin https://github.com/username/repository_name.git`**: 
+Add a remote repository named `origin`. Replace URL with your GitHub repository URL.
 
 Verify remote URL:
 
