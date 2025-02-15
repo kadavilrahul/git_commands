@@ -15,4 +15,4 @@ This collection of guides aims to provide a solid foundation in Git for anyone s
 
 ## Contributors
 
-*   [Your Name](https://github.com/your-github-username) - Initial guides and README
+*   [Rahul Dinesh](https://github.com/kadavilrauhl) 
