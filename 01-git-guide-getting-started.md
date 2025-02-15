@@ -57,12 +57,14 @@ git status
 ### Stage Changes
 
 Prepare changes for the next commit.
-
+For all files:
 ```bash
 git add .
 ```
-
-*   **`git add .`**: Stage all changes in the current directory. Use `git add <filename>` for specific files.
+For specific files:
+```bash
+git add <filename>
+```
 
 ### Commit Changes - Save Progress
 
@@ -71,9 +73,6 @@ Save staged changes as a new commit (snapshot).
 ```bash
 git commit -m "Your commit message"
 ```
-
-*   **`git commit -m "Your commit message"`**: Save staged changes as a commit. Write clear commit messages describing changes (e.g., "Fix typo", "Add user login").
-
 ### View Commit History
 
 See commit history.
