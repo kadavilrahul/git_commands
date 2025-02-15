@@ -96,6 +96,7 @@ Check if a folder is a Git repository:
 git rev-parse --is-inside-work-tree
 ```
 Should get response as true
+
 ### Check Project Status
 
 See the current state of your project. See repository status, untracked files, changes not staged, changes to commit, current branch.
