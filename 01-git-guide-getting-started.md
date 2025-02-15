@@ -4,17 +4,13 @@ This section covers the initial setup and basic local operations.
 
 ### Install Git
 
-Install Git on your computer. For Linux, use these commands:
+Install Git on your Linux machine:
 
 ```bash
 sudo apt update
 sudo apt install git
 git --version
 ```
-
-*   **`sudo apt update`**: Update software list (Linux).
-*   **`sudo apt install git`**: Install Git (Linux).
-*   **`git --version`**: Check Git installation.
 
 For Windows or macOS, download from [https://git-scm.com/downloads](https://git-scm.com/downloads) and follow instructions.
 
@@ -24,6 +20,8 @@ Tell Git who you are for commit authorship.
 
 ```bash
 git config --global user.name "Your Name"
+```
+```bash
 git config --global user.email "your.email@example.com"
 ```
 
