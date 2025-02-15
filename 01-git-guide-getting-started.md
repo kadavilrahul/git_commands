@@ -25,10 +25,7 @@ git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
 
-*   **`git config --global user.name "Your Name"`**: Set your name for Git.
-*   **`git config --global user.email "your.email@example.com"`**: Set your email for Git (use GitHub email if applicable).
-
-Check configuration:
+Check configuration if it's updated:
 
 ```bash
 git config --global --list
@@ -36,29 +33,26 @@ git config --global --list
 
 ### Initialize Git Repository
 
-Turn your project folder into a Git repository. In your project folder, run:
+Turn your project folder into a Git repository. Run once per project. 
+In your project folder, run:
 
 ```bash
 git init
 ```
-
-*   **`git init`**: Initialize a new Git repository in the current folder.  Run once per project.
 
 Check if a folder is a Git repository:
 
 ```bash
 git rev-parse --is-inside-work-tree
 ```
-
+Should get response as true
 ### Check Project Status
 
-See the current state of your project.
+See the current state of your project. See repository status, untracked files, changes not staged, changes to commit, current branch.
 
 ```bash
 git status
 ```
-
-*   **`git status`**: Show repository status: untracked files, changes not staged, changes to commit, current branch.
 
 ### Stage Changes
 
