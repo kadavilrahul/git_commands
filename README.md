@@ -10,3 +10,9 @@ This repository contains a series of guides designed to help beginners learn Git
 4.  **[More Useful Git Features](04-git-guide-more-features.md)**: Explore additional Git features such as stashing changes, viewing specific commits, removing files from tracking, tagging commits, and managing credentials.
 
 This collection of guides aims to provide a solid foundation in Git for anyone starting with version control.
+
+---
+
+## Contributors
+
+*   [Your Name](https://github.com/your-github-username) - Initial guides and README
