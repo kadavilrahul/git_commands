@@ -2,9 +2,13 @@
 
 This guide helps you get started with Git, a tool for tracking code changes and collaboration. Git saves versions of your project, allowing you to revert to earlier states and work with others, especially on platforms like GitHub.
 
-Let's learn the basics.
+Let's learn the basics step-by-step.
 
-## Install Git
+## 1. Getting Started with Git
+
+This section covers the initial setup and basic local operations.
+
+### Install Git
 
 Install Git on your computer. For Linux, use these commands:
 
@@ -20,7 +24,7 @@ git --version
 
 For Windows or macOS, download from [https://git-scm.com/downloads](https://git-scm.com/downloads) and follow instructions.
 
-## Configure Git - Set Up Identity
+### Configure Git - Set Up Identity
 
 Tell Git who you are for commit authorship.
 
@@ -38,11 +42,7 @@ Check configuration:
 git config --global --list
 ```
 
-## Basic Git Workflow - Your First Project
-
-Basic steps for using Git in a project.
-
-### 1. Initialize Git Repository
+### Initialize Git Repository
 
 Turn your project folder into a Git repository. In your project folder, run:
 
@@ -58,7 +58,7 @@ Check if a folder is a Git repository:
 git rev-parse --is-inside-work-tree
 ```
 
-### 2. Check Project Status
+### Check Project Status
 
 See the current state of your project.
 
@@ -68,7 +68,7 @@ git status
 
 *   **`git status`**: Show repository status: untracked files, changes not staged, changes to commit, current branch.
 
-### 3. Stage Changes
+### Stage Changes
 
 Prepare changes for the next commit.
 
@@ -78,7 +78,7 @@ git add .
 
 *   **`git add .`**: Stage all changes in the current directory. Use `git add <filename>` for specific files.
 
-### 4. Commit Changes - Save Progress
+### Commit Changes - Save Progress
 
 Save staged changes as a new commit (snapshot).
 
@@ -88,7 +88,7 @@ git commit -m "Your commit message"
 
 *   **`git commit -m "Your commit message"`**: Save staged changes as a commit. Write clear commit messages describing changes (e.g., "Fix typo", "Add user login").
 
-### 5. View Commit History
+### View Commit History
 
 See commit history.
 
@@ -106,11 +106,11 @@ git log --oneline
 
 *   **`git log --oneline`**: Show commit history in one line per commit.
 
-## Working with Remote Repositories (like GitHub)
+## 2. Working with Remote Repositories
 
-Share code online and collaborate using platforms like GitHub. Connect local Git repository to a remote repository on GitHub.
+This section explains how to connect to and work with remote repositories like GitHub.
 
-### 1. Add Remote Repository
+### Add Remote Repository
 
 Connect local repository to a remote repository on GitHub. Get repository URL from GitHub (e.g., `https://github.com/username/repository_name.git`).
 
@@ -128,7 +128,7 @@ git remote -v
 
 *   **`git remote -v`**: Show configured remote repositories and URLs.
 
-### 2. Push Changes to Remote Repository
+### Push Changes to Remote Repository
 
 Upload local commits to GitHub.
 
@@ -140,7 +140,7 @@ git push --set-upstream origin main
 
 Use a Personal Access Token (PAT) instead of password for security (generate in GitHub settings).
 
-### 3. Clone a Repository - Download from GitHub
+### Clone a Repository - Download from GitHub
 
 Download a project from GitHub to your computer.
 
@@ -152,11 +152,21 @@ cd repository_name
 *   **`git clone https://github.com/username/repository_name.git`**: Clone (download) a repository from the given URL.
 *   **`cd repository_name`**: Go to the cloned repository folder.
 
-## Working with Branches
+### Pulling Changes from Remote
 
-Work on features or fixes in isolation using branches.
+Get changes from a remote repository.
 
-### 1. Create New Branch
+```bash
+git pull origin main
+```
+
+*   **`git pull origin main`**: Fetch and merge changes from the `main` branch on `origin` into your current branch.  You can often use `git pull` if your local branch is tracking `origin/main`.
+
+## 3. Collaborating with Branches
+
+This section introduces branching for parallel development and collaboration.
+
+### Create New Branch
 
 Create and switch to a new branch.
 
@@ -166,7 +176,7 @@ git checkout -b <new-branch-name>
 
 *   **`git checkout -b <new-branch-name>`**: Create a new branch named `<new-branch-name>` and switch to it (e.g., `feature-x`, `fix-y`).
 
-### 2. Switch Between Branches
+### Switch Between Branches
 
 Switch to an existing branch.
 
@@ -176,7 +186,7 @@ git checkout <branch-name>
 
 *   **`git checkout <branch-name>`**: Switch to branch `<branch-name>` (e.g., `main`, `feature-x`).
 
-### 3. List Branches
+### List Branches
 
 List branches.
 
@@ -194,7 +204,7 @@ git branch -a
 
 *   **`git branch -a`**: List all branches (local and remote).
 
-### 4. Push New Branch to Remote
+### Push New Branch to Remote
 
 Upload a new local branch to the remote repository.
 
@@ -204,19 +214,9 @@ git push --set-upstream origin <branch-name>
 
 *   **`git push --set-upstream origin <branch-name>`**: Push local branch `<branch-name>` to `origin`. Required for the first push of a new branch. Later, use `git push`.
 
-## Pulling Changes from Remote
+## 4. More Useful Git Features
 
-Get changes from a remote repository.
-
-```bash
-git pull origin <branch-name>
-```
-
-*   **`git pull origin <branch-name>`**: Fetch and merge changes from `<branch-name>` on `origin` into your current branch. For `main` branch, use `git pull origin main` or `git pull`.
-
-## Other Useful Git Commands
-
-More helpful Git commands.
+This section covers some additional helpful Git commands.
 
 ### Stash Changes Temporarily
 
@@ -307,7 +307,7 @@ git tag -a <tag-name> -m "Tag message"
 git push origin --tags
 ```
 
-## Credential Management - Securely Store GitHub Token (Optional)
+### Credential Management - Securely Store GitHub Token (Optional)
 
 Secure authentication with GitHub using Personal Access Token (PAT). Use credential manager to store token.
 
