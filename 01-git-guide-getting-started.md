@@ -14,6 +14,15 @@ git --version
 
 For Windows or macOS, download from [https://git-scm.com/downloads](https://git-scm.com/downloads) and follow instructions.
 
+**Verify Installation**
+
+After installation, verify that Git is correctly installed by checking the version:
+
+```bash
+git --version
+```
+This command should output the installed Git version, confirming successful installation.
+
 ### Configure Git - Set Up Identity
 
 Tell Git who you are for commit authorship.
@@ -31,9 +40,50 @@ Check configuration if it's updated:
 git config --global --list
 ```
 
+### Default Branch Name
+
+By default, Git may initialize new repositories with a branch named `main`. In older versions or configurations, the default branch might be `master`.
+
+To check your default initial branch name, use:
+
+```bash
+git config --global init.defaultBranch
+```
+
+If you want to set a specific default branch name for all new repositories you create, you can use:
+
+```bash
+git config --global init.defaultBranch main
+```
+Replace `main` with your desired default branch name if needed. If you don't set this, Git will use its default (which might be `main` or `master` depending on your Git version and settings).
+
+### Configure Default Editor (Optional)
+
+Git uses a text editor to write commit messages and for other operations. Git will try to use your system's default editor. You can configure a specific editor if you prefer.
+
+To check your current default editor, use:
+
+```bash
+git config --global core.editor
+```
+
+To set a specific editor, for example, Visual Studio Code, you can use:
+
+```bash
+git config --global core.editor "code --wait"
+```
+
+Or for other editors, like Nano:
+
+```bash
+git config --global core.editor "nano"
+```
+
+Choose your preferred editor and configure it using the appropriate command.
+
 ### Initialize Git Repository
 
-Turn your project folder into a Git repository. Run once per project. 
+Turn your project folder into a Git repository. Run once per project.
 In your project folder, run:
 
 ```bash
