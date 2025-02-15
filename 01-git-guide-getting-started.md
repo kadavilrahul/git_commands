@@ -139,5 +139,7 @@ For a shorter view:
 ```bash
 git log --oneline
 ```
+```bash
+git log --pretty=format:"%h %ad %s" --date=format:"%Y-%m-%d %H:%M:%S"
+```
 
-*   **`git log --oneline`**: Show commit history in one line per commit.
