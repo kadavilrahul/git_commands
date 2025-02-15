@@ -21,7 +21,6 @@ After installation, verify that Git is correctly installed by checking the versi
 ```bash
 git --version
 ```
-This command should output the installed Git version, confirming successful installation.
 
 ### Configure Git - Set Up Identity
 
@@ -230,6 +229,6 @@ If you want to undo the last commit but keep the changes you made in the staging
 ```bash
 git reset --soft HEAD~1
 ```
-This command moves the branch pointer back to the commit before the last one, effectively undoing the last commit. The changes from the undone commit are preserved in the staging area, allowing you to modify them or create a new commit.
+This command moves the branch pointer back to the commit before the last one, effectively undoing the last commit. 
+The changes from the undone commit are preserved in the staging area, allowing you to modify them or create a new commit.
 
-This guide covers the essential steps to get started with Git for version control. As you continue to use Git, you'll discover more powerful features and workflows. Make sure to explore the other sections of this guide to deepen your understanding and skills.

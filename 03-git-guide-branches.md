@@ -10,7 +10,6 @@ Create and switch to a new branch.
 git checkout -b <new-branch-name>
 ```
 
-*   **`git checkout -b <new-branch-name>`**: Create a new branch named `<new-branch-name>` and switch to it (e.g., `feature-x`, `fix-y`). Choose descriptive names for your branches.
 
 ### Switch Between Branches
 
@@ -20,7 +19,6 @@ Switch to an existing branch.
 git checkout <branch-name>
 ```
 
-*   **`git checkout <branch-name>`**: Switch to branch `<branch-name>` (e.g., `main`, `feature-x`).
 
 ### List Branches
 
@@ -29,16 +27,11 @@ List branches.
 ```bash
 git branch
 ```
-
-*   **`git branch`**: List local branches. Current branch marked with `*`.
-
 List local and remote branches:
 
 ```bash
 git branch -a
 ```
-
-*   **`git branch -a`**: List all branches (local and remote).
 
 ### Push New Branch to Remote
 
@@ -48,7 +41,11 @@ Upload a new local branch to the remote repository.
 git push --set-upstream origin <branch-name>
 ```
 
-*   **`git push --set-upstream origin <branch-name>`**: Push local branch `<branch-name>` to `origin`. Required for the first push of a new branch. Later, use `git push`.
+### Push the first change 
+
+```bash
+git push origin <branch-name>
+```
 
 ### Merge a Branch
 
@@ -58,8 +55,6 @@ Integrate changes from another branch into the current branch.  Usually, you mer
 git merge <branch-name>
 ```
 
-*   **`git merge <branch-name>`**: Merge branch `<branch-name>` into the current branch.  Make sure you are on the branch that should receive the changes (e.g., `main` when merging a feature branch).
-
 ### Delete a Branch
 
 Delete a local branch.
@@ -68,12 +63,8 @@ Delete a local branch.
 git branch -d <branch-name>
 ```
 
-*   **`git branch -d <branch-name>`**: Delete local branch `<branch-name>`. Use `-D` instead of `-d` to force delete a branch that has not been merged.
-
 Delete a remote branch.
 
 ```bash
 git push origin --delete <branch-name>
 ```
-
-*   **`git push origin --delete <branch-name>`**: Delete remote branch `<branch-name>`.

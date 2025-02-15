@@ -22,7 +22,6 @@ git stash push -m "Your stash name"
 ```bash
 git stash -u
 ```
-*   **`git stash -u`**:  Stash also untracked files.
 
 List stashes:
 
@@ -30,15 +29,11 @@ List stashes:
 git stash list
 ```
 
-*   **`git stash list`**: Show list of stashes.
-
 Apply latest stash:
 
 ```bash
 git stash apply
 ```
-
-*   **`git stash apply`**: Apply the latest stash (keeps stash).
 
 **Apply a specific stash:**
 ```bash
@@ -51,8 +46,6 @@ Apply and remove latest stash:
 ```bash
 git stash pop
 ```
-
-*   **`git stash pop`**: Apply and remove the latest stash.
 
 Remove a specific stash:
 
