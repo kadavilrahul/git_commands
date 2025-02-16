@@ -23,8 +23,8 @@ This repository contains a comprehensive collection of Git guides and command re
 Clone this repository to have offline access to all guides:
 
 ```bash
-git clone https://github.com/kadavilrahul/git-guides.git
-cd git-guides
+git clone https://github.com/kadavilrahul/git_commands.git
+cd git_commands
 ```
 
 ## Contributing

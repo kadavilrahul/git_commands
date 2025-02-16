@@ -17,6 +17,7 @@ git commit -m "commit message"                        # Commit with message
 git push                                             # Push to remote
 git pull                                             # Pull from remote
 git status                                           # Check repository status
+git add . && git commit -m "Update" && git push      # Stage, commit, and push changes
 
 # Branch Management
 git branch                                           # List branches
