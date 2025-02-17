@@ -7,7 +7,7 @@ This guide provides a quick reference for the most commonly used Git commands in
 # Repository Setup and Configuration
 git clone https://github.com/username/repository.git    # Clone a repository
 git clone https://github.com/username/repository.git .  # Clone a Git repository directly into the current directory (root) without creating a new folder,
-git init                                               # Initialize a new repository
+git init                                                # Initialize a new repository
 git config --global user.name "Your Name"             # Set username globally
 git config --global user.email "your@email.com"       # Set email globally
 git config --global credential.helper store           # Store credentials
@@ -25,6 +25,7 @@ git branch                                           # List branches
 git checkout -b branch-name                          # Create and switch to new branch
 git checkout branch-name                             # Switch to existing branch
 git push --set-upstream origin branch-name           # Push new branch to remote
+git add . && git commit -m "Update"                  # Add and commit first changes
 git push origin <branch-name>                        # Push the first change to remote
 git branch -d branch-name                            # Delete local branch
 git push origin --delete branch-name                 # Delete remote branch
