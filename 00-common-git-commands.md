@@ -6,6 +6,7 @@ This guide provides a quick reference for the most commonly used Git commands in
 ```bash
 # Repository Setup and Configuration
 git clone https://github.com/username/repository.git    # Clone a repository
+git clone https://github.com/username/repository.git .  # Clone a Git repository directly into the current directory (root) without creating a new folder,
 git init                                               # Initialize a new repository
 git config --global user.name "Your Name"             # Set username globally
 git config --global user.email "your@email.com"       # Set email globally
