@@ -7,7 +7,7 @@ This guide provides a quick reference for the most commonly used Git commands in
 # Repository Setup and Configuration
 git clone https://github.com/username/repository.git    # Clone a repository
 git clone https://github.com/username/repository.git .  # Clone a Git repository directly into the current directory (root) without creating a new folder
-/var/www/main.silkroademart.com/generate_html_from_csv  # Clone a specific branch of a Git repository
+git clone -b <branch-name> <repository-url>             # Clone a specific branch of a Git repository
 git init                                                # Initialize a new repository
 git config --global user.name "Your Name"             # Set username globally
 git config --global user.email "your@email.com"       # Set email globally
