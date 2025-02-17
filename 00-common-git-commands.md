@@ -25,6 +25,7 @@ git branch                                           # List branches
 git checkout -b branch-name                          # Create and switch to new branch
 git checkout branch-name                             # Switch to existing branch
 git push --set-upstream origin branch-name           # Push new branch to remote
+git push origin <branch-name>                        # Push the first change to remote
 git branch -d branch-name                            # Delete local branch
 git push origin --delete branch-name                 # Delete remote branch
 
